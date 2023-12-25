@@ -97,7 +97,7 @@ public class BSTTest extends TestCase {
      */
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void testRemove03() {
-        bst01.remove(new KVPair(0, new Seminar()));
+        bst01.remove(getName());
         KVPair pair00 = new KVPair(0, new Seminar());
         KVPair pair01 = new KVPair(1, new Seminar());
         KVPair pair02 = new KVPair(2, new Seminar());
@@ -290,7 +290,6 @@ public class BSTTest extends TestCase {
     /**
      * more tests
      */
-    @SuppressWarnings("unchecked")
     public void testRemoveEdgeCases() 
     {
         bst01.insert(getName());

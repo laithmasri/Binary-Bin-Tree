@@ -154,26 +154,4 @@ public class DataBaseTest extends TestCase {
         db.searchDate(new KVPair<String, Seminar>("0", new Seminar()),
             new KVPair<String, Seminar>("3", new Seminar()));
     }
-    
-    /**
-     * remove keyword
-     */
-    public void testDeleteKeyword()
-    {
-        KVPair<Integer, Seminar> node01 = new KVPair<Integer, Seminar>(1,
-            seminar01);
-        KVPair<Integer, Seminar> node02 = new KVPair<Integer, Seminar>(1,
-            seminar02);
-        
-        db.insert(seminar01);
-        db.insert(seminar02);
-        System.out.println("~~~~~~~~~~");
-        db.printKeyword();
-        db.delete(node02);
-        System.out.println("~~~~~~~~~~");
-        db.printKeyword();
-        db.delete(node01);
-        System.out.println("~~~lastone~~~~~~");
-        db.printKeyword();
-    }
 }

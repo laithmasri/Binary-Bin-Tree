@@ -266,7 +266,6 @@ public class DataBase<E extends Comparable<E>> {
             KVPair<String, Seminar> removeKeyword = new KVPair<String, Seminar>(
                 keywords[x], sem);
             keywordBST.removeSem(keywordBST.getRoot(), removeKeyword);
-            //keywordBST.remove(removeKeyword);
 
         }
         int xCoord = sem.x();
